@@ -4,3 +4,6 @@
 [submodule "lib/burve-contracts"]
 	path = lib/burve-contracts
 	url = https://github.com/burveprotocol/burve-contracts
+[submodule "lib/openzeppelin-contracts"]
+	path = lib/openzeppelin-contracts
+	url = https://github.com/Openzeppelin/openzeppelin-contracts
