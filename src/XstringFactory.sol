@@ -32,7 +32,7 @@ contract XstringFactory is Vault {
         address tokenAddr = burveFactory.deployTokenWithHooks(token, 0, hooks, datas);
         tokens[id] = tokenAddr;
         emit LogXstringTokenDeployed(token.tokenType, token.bondingCurveType, tokenAddr, id);
-        return proxy;
+        return tokenAddr;
     }
 
     function airdrop(address token, uint256 paidAmount, bytes32 root, uint256 seed, bytes32 r, bytes32 s, uint8 v) external {
